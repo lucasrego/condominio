@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Condomínio</title>
+		
+		<!-- JQuery -->
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		
+		<!-- JQuery UI -->
+		<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<link type="text/css" href="css/smoothness/jquery-ui-1.8.22.custom.css" rel="stylesheet" />
+				
+		<!-- Layout -->
+		<script type="text/javascript" src="js/jquery.layout-latest.min.js"></script>	
+		
+		<!-- Data Tables -->
+		<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>	
+
+		
+		<link type="text/css" href="css/geral.css" rel="stylesheet" />
+		
+		<script type="text/javascript">
+			$(function(){
+				
+				//Layout
+				$('body').layout({ applyDefaultStyles: true });
+
+				// Tabs
+				$('#tabs').tabs();
+
+				//DataTable
+				oTable = $('#example').dataTable({
+					"bJQueryUI": true,
+					"sPaginationType": "full_numbers"
+				});
+				
+			});
+		</script>
+
+	</head>
+	<body>
+	
+	<div class="ui-layout-north"></div>
+	<div class="ui-layout-south"></div>
+	<div class="ui-layout-center">
+		<!-- Tabs -->
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">First</a></li>
+				<li><a href="#tabs-2">Second</a></li>
+				<li><a href="#tabs-3">Third</a></li>
+			</ul>
+			<div id="tabs-1">
+				
+				<table cellpadding="0" cellspacing="0" border="0" class="display" id="example">
+					<thead>
+						<tr>
+							<th>Rendering engine</th>
+							<th>Browser</th>
+							<th>Platform(s)</th>
+							<th>Engine version</th>
+							<th>CSS grade</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="gradeX">
+							<td>Trident</td>
+							<td>Internet
+								 Explorer 4.0</td>
+							<td>Win 95+</td>
+							<td class="center">4</td>
+							<td class="center">X</td>
+						</tr>
+						<tr class="gradeC">
+							<td>Trident</td>
+							<td>Internet
+								 Explorer 5.0</td>
+							<td>Win 95+</td>
+							<td class="center">5</td>
+							<td class="center">C</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
+			<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
+		</div>
+	</div>
+	<div class="ui-layout-east"></div>
+	<div class="ui-layout-west"></div>
+	
+		
+
+	</body>
+</html>
+
+
